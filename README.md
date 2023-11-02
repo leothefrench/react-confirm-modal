@@ -1,23 +1,23 @@
 # react-confirm-modal
-"Une bibliothèque React simple et flexible pour créer des modales de confirmation interactives,
+Une bibliothèque React simple et flexible pour créer des modales de confirmation interactives
 
-Installation
+## Installation
 Utilisez npm pour installer ce package dans votre projet :
 
 npm install react-confirm-modal
 
 ## Utilisation
-import React from 'react';
+import React from 'react';  
 import { Modal } from 'react-confirm-modal';
 
-function App() {
-  // Votre code React
+function App() {  
+&nbsp;&nbsp;// Votre code React
 
   return (
     <div>
-      {/* Autres éléments de votre application */}
-      <Modal isOpen={true} handleClose={() => { /* Gérer la fermeture de la modale */ }}>
-        {/* Contenu de votre modale de confirmation */}
+      {/* Autres éléments de votre application */}  
+      &nbsp;<Modal isOpen={true} handleClose={() => {          /* Gérer la fermeture de la modale */ }}>  
+        &nbsp;&nbsp;{/* Contenu de votre modale de confirmation */}
       </Modal>
     </div>
   );
