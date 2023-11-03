@@ -7,24 +7,40 @@ Utilisez npm pour installer ce package dans votre projet :
 npm install react-confirm-modal
 
 ## Utilisation
+```jsx
 import React from 'react';  
 import { Modal } from 'react-confirm-modal';
 
 function App() {  
-&nbsp;&nbsp;// Votre code React
+// Votre code React
 
   return (
     <div>
       {/* Autres éléments de votre application */}  
-      &nbsp;<Modal isOpen={true} handleClose={() => {          /* Gérer la fermeture de la modale */ }}>  
-        &nbsp;&nbsp;{/* Contenu de votre modale de confirmation */}
+
+      <Modal isOpen={true} handleClose={() => {
+        {/* 
+          Utilisation de la modale générique avec de options personnalisées :
+
+          -isOpen : indique si la modale est ouverte
+          -handleClose: fonction de gestion de la fermeture de la modale
+        */}
+        /* Gérer la fermeture de la modale */ 
+        }}>  
+
+        {/*
+         Contenu de votre modale de confirmation
+         Vous pouvez personnalisé le texte affiché ici en utilisant la propriété `customText` et `customStyles`
+
+         `customStyles` (optionnel): Vous pouvez fournir un objet contenant des styles CSS personnalisés pour personnaliser l'apparence de le modale
+        */}
       </Modal>
     </div>
   );
 }
 
 export default App;
-
+```
 
 ## Personnalisation
 
