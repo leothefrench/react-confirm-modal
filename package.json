@@ -1,5 +1,5 @@
 {
-  "name": "react-confirm-modal",
+  "name": "react-confirm-modal-v1",
   "version": "1.0.0",
   "description": "Un composant de modale React pour des confirmations d'actions personnalisées, offrant une expérience utilisateur flexible et réutilisable",
   "main": "dist/index.js",
