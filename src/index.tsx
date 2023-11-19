@@ -32,7 +32,7 @@ export const Modal: React.FC<ModalProps> = ({isOpen, handleClose, customText, cu
         width: '100vw',
         height: '100vh',
         background: 'rgba(0, 0, 0, 0.7)',
-        // ...customStyles,
+        ...customStyles,
     }
 
     const containerTextModalStyles:React.CSSProperties = {

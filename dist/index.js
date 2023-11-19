@@ -7,18 +7,7 @@ exports.Modal = void 0;
 const react_1 = __importDefault(require("react"));
 const Modal = ({ isOpen, handleClose, customText, customStyles }) => {
     const customTextValue = customText || 'Action confirmée';
-    const modalStyles = {
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        display: isOpen ? 'flex' : 'none',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100vw',
-        height: '100vh',
-        background: 'rgba(0, 0, 0, 0.7)',
-        // ...customStyles,
-    };
+    const modalStyles = Object.assign({ position: 'fixed', top: 0, left: 0, display: isOpen ? 'flex' : 'none', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh', background: 'rgba(0, 0, 0, 0.7)' }, customStyles);
     const containerTextModalStyles = {
         backgroundColor: 'white',
         width: '100%',
