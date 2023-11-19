@@ -32,16 +32,16 @@ export const Modal: React.FC<ModalProps> = ({isOpen, handleClose, customText, cu
         width: '100vw',
         height: '100vh',
         background: 'rgba(0, 0, 0, 0.7)',
-        ...customStyles,
     }
 
-    const containerTextModalStyles:React.CSSProperties = {
+    const containerTextModalStyles: React.CSSProperties = {
         backgroundColor: 'white',
         width: '100%',
         maxWidth: '400px',
         padding: '1rem',
         textAlign: 'center',
-    }
+        ...customStyles,
+    };
 
     const h2Styles:React.CSSProperties = {
         fontSize: '1.5rem',
